@@ -1,0 +1,328 @@
+```html
+<!DOCTYPE html>
+<html lang="te">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mana English | మన ఇంగ్లీష్</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="navbar">
+        <h1>🌱 మన ఇంగ్లీష్</h1>
+
+        <div class="user-stats">
+            <span>🔥 <b id="streak">1</b></span>
+            <span>❤️ 5</span>
+            <span>⭐ <b id="points">0</b> XP</span>
+        </div>
+    </header>
+
+    <nav class="main-nav">
+        <a href="#home">🏠 హోమ్</a>
+        <a href="#lessons">📚 పాఠాలు</a>
+        <a href="#practice">🎤 మాట్లాడండి</a>
+        <a href="#progress">🏆 నా ప్రగతి</a>
+
+        <button onclick="openAssistant()">
+            🤖 సహాయకుడు
+        </button>
+    </nav>
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+
+                <span class="tag">
+                    మీ ఇంగ్లీష్ ప్రయాణం ఇక్కడ మొదలు
+                </span>
+
+                <h2>
+                    ఇంగ్లీష్ నేర్చుకుందాం! 🚀
+                </h2>
+
+                <h3>
+                    నేర్చుకోండి. మాట్లాడండి. ముందుకు సాగండి.
+                </h3>
+
+                <p>
+                    ఇంగ్లీష్ మాట్లాడటం కష్టంగా ఉందా?
+                    చింతించకండి! తెలుగులో సులభంగా నేర్చుకుంటూ,
+                    రోజువారీ జీవితంలో ఇంగ్లీష్ మాట్లాడటం ప్రాక్టీస్ చేయండి.
+                </p>
+
+                <button onclick="startLearning()">
+                    నా ప్రయాణం మొదలుపెట్టండి →
+                </button>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="circle">🦜</div>
+
+                <h3>హలో ఫ్రెండ్! 👋</h3>
+
+                <p>నేను మీ ఇంగ్లీష్ నేర్చుకునే స్నేహితుడిని!</p>
+
+            </div>
+
+        </section>
+
+
+        <section class="features">
+
+            <h2>మీకు ఏమి నేర్పించాలి? ✨</h2>
+
+            <p class="section-description">
+                చిన్న చిన్న పాఠాలతో ఇంగ్లీష్‌లో ఆత్మవిశ్వాసం పెంచుకోండి.
+            </p>
+
+            <div class="feature-container">
+
+                <div class="feature-card">
+                    <span>📚</span>
+                    <h3>సులభమైన పాఠాలు</h3>
+                    <p>కొత్త పదాలు, వాక్యాలను తెలుగులో అర్థం చేసుకోండి.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span>🎤</span>
+                    <h3>మాట్లాడే సాధన</h3>
+                    <p>వాక్యాలు విని, ఇంగ్లీష్‌లో మాట్లాడటం ప్రాక్టీస్ చేయండి.</p>
+                </div>
+
+                <div class="feature-card">
+                    <span>🤖</span>
+                    <h3>నా ఇంగ్లీష్ సహాయకుడు</h3>
+                    <p>సాధారణ ఇంగ్లీష్ ప్రశ్నలకు తెలుగులో వివరణలు పొందండి.</p>
+
+                    <button onclick="openAssistant()">
+                        సహాయకుడితో మాట్లాడండి
+                    </button>
+                </div>
+
+                <div class="feature-card">
+                    <span>🏆</span>
+                    <h3>పాయింట్లు పొందండి</h3>
+                    <p>పాఠాలు పూర్తి చేసి XP సంపాదించండి.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="lessons" id="lessons">
+
+            <h2>మీ మొదటి పాఠాన్ని ఎంచుకోండి 🎯</h2>
+
+            <p class="section-description">
+                మీకు నచ్చిన పాఠంతో ప్రారంభించండి!
+            </p>
+
+            <div class="lesson-container">
+
+                <div class="lesson-card">
+
+                    <span>👋</span>
+
+                    <h3>పరిచయాలు</h3>
+
+                    <p>
+                        హలో చెప్పడం, మీ పేరు చెప్పడం నేర్చుకోండి.
+                    </p>
+
+                    <p class="lesson-level">స్థాయి 1 • ప్రారంభం</p>
+
+                    <button onclick="openLesson('greetings')">
+                        పాఠం ప్రారంభించండి
+                    </button>
+
+                </div>
+
+
+                <div class="lesson-card">
+
+                    <span>🛍️</span>
+
+                    <h3>షాపింగ్</h3>
+
+                    <p>
+                        ధరలు అడగడం, వస్తువులు కొనడం నేర్చుకోండి.
+                    </p>
+
+                    <p class="lesson-level">స్థాయి 1 • ప్రారంభం</p>
+
+                    <button onclick="openLesson('shopping')">
+                        పాఠం ప్రారంభించండి
+                    </button>
+
+                </div>
+
+
+                <div class="lesson-card">
+
+                    <span>🚌</span>
+
+                    <h3>ప్రయాణం</h3>
+
+                    <p>
+                        బస్సు ప్రయాణంలో ఉపయోగపడే వాక్యాలు నేర్చుకోండి.
+                    </p>
+
+                    <p class="lesson-level">స్థాయి 1 • ప్రారంభం</p>
+
+                    <button onclick="openLesson('travel')">
+                        పాఠం ప్రారంభించండి
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="practice" id="practice">
+
+            <h2>ఇప్పుడు మాట్లాడి చూద్దామా? 🎤</h2>
+
+            <p>
+                ఇంగ్లీష్ వాక్యాన్ని వినండి. తర్వాత మీరే చెప్పండి.
+            </p>
+
+            <div class="practice-box">
+
+                <div style="font-size:45px;">🗣️</div>
+
+                <h3 id="practiceSentence">
+                    Hello! How are you?
+                </h3>
+
+                <p>
+                    తెలుగు అర్థం: హలో! మీరు ఎలా ఉన్నారు?
+                </p>
+
+                <button onclick="speakSentence()">
+                    🔊 వాక్యం వినండి
+                </button>
+
+                <button onclick="nextSentence()">
+                    తర్వాతి వాక్యం →
+                </button>
+
+                <p id="practiceMessage" aria-live="polite"></p>
+
+            </div>
+
+        </section>
+
+
+        <section class="assistant-section">
+
+            <div class="assistant-card">
+
+                <div style="font-size:55px;">🤖</div>
+
+                <h2>మీ ఇంగ్లీష్ స్నేహితుడు!</h2>
+
+                <p>
+                    "Hello" అంటే ఏమిటి? ఇంగ్లీష్‌లో నీళ్లు ఎలా అడగాలి?
+                    మీ సందేహాలను అడగండి.
+                </p>
+
+                <button onclick="openAssistant()">
+                    💬 నా సహాయకుడిని తెరవండి
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <section class="progress" id="progress">
+
+            <h2>మీ అభ్యాస ప్రగతి 🌟</h2>
+
+            <p>
+                మీరు నేర్చుకున్న ప్రతి పాఠం మీ విజయానికి ఒక మెట్టు!
+            </p>
+
+            <div class="progress-container">
+
+                <div class="progress-card">
+                    <span>⭐</span>
+                    <h3><span id="progressXP">0</span> XP</h3>
+                    <p>సంపాదించిన పాయింట్లు</p>
+                </div>
+
+                <div class="progress-card">
+                    <span>📚</span>
+                    <h3 id="completedLessons">0</h3>
+                    <p>పూర్తి చేసిన పాఠాలు</p>
+                </div>
+
+                <div class="progress-card">
+                    <span>🔥</span>
+                    <h3><span id="streakProgress">1</span></h3>
+                    <p>రోజుల స్ట్రీక్</p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <h2>🌱 మన ఇంగ్లీష్</h2>
+
+        <p>
+            ఇంగ్లీష్ నేర్చుకోండి. కొత్త అవకాశాలను అందుకోండి.
+        </p>
+
+        <p>
+            ప్రతి ఒక్కరి అభివృద్ధి కోసం ❤️
+        </p>
+
+        <small>
+            Mana English © 2026
+        </small>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    <script>
+        const savedXP = Number(localStorage.getItem("manaXP")) || 0;
+
+        document.getElementById("points").textContent = savedXP;
+        document.getElementById("progressXP").textContent = savedXP;
+
+        const savedStreak = Number(localStorage.getItem("manaStreak")) || 1;
+
+        document.getElementById("streak").textContent = savedStreak;
+        document.getElementById("streakProgress").textContent = savedStreak;
+
+        const savedCompleted = Number(localStorage.getItem("manaCompleted")) || 0;
+
+        document.getElementById("completedLessons").textContent = savedCompleted;
+    </script>
+
+</body>
+</html>
+```
